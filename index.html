@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5505 Youth Rec Grant</title>
+    <title>Minimal Website with Header and Links as Buttons</title>
     <style>
-
+        /* Basic styling for the header */
         header {
             background-color: #333;
             color: #fff;
@@ -13,30 +13,43 @@
             text-align: center;
         }
 
-
-        nav {
+        /* Styling for navigation buttons */
+        .nav-buttons {
             text-align: center;
+            margin-top: 10px;
         }
 
-        nav a {
-            color: #000;
+        .nav-buttons a.button {
+            display: inline-block;
+            background-color: #007bff; /* Blue, adjust as needed */
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
             text-decoration: none;
-            margin: 0 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+
+        .nav-buttons a.button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
         }
     </style>
 </head>
 <body>
 
-
+    <!-- Header section -->
     <header>
-        <h1>5505 Youth Rec Grant</h1>
+        <h1>My Website</h1>
     </header>
 
-
-    <nav>
-        <a href="#">Check out our improvements on the field!</a>
-        <a href="#">See our digital Storymap!</a>
-    </nav>
+    <!-- Navigation buttons -->
+    <div class="nav-buttons">
+        <a href="#" class="button">Link 1</a>
+        <a href="#" class="button">Link 2</a>
+    </div>
 
 </body>
 </html>
